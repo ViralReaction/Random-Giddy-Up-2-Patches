@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Giddy-Up 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[ defName = "pphhyy_Vargulf"]</xpath>
+                    <value>
+                        <li Class="GiddyUp.DrawingOffset">
+                            <!--Offsets can be configured for each view (north, south, west, east) separately using comma separated floating point values-->
+                            <northOffset>0,0,-0.6</northOffset><!--x,y,z coordinates. Mind that x: horizontal axis, y: drawing priority, z: vertical axis -->    
+                            <southOffset>0,0,-0.4</southOffset>
+                            <eastOffset>0.0,0,-0.2</eastOffset>
+                            <westOffset>0.0,0,-0.2</westOffset>
+                        </li>
+                    </value>
+                </li>
+				
+				<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="pphhyy_Vargulf"]/comps</xpath>
+				<value>
+					<li Class="GiddyUp.CompProperties_Overlay">
+						<overlayFront>
+							<graphicDataDefault>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>2.7</drawSize>
+								<drawRotated>false</drawRotated>
+							</graphicDataDefault>
+							<allVariants>
+								<li><texPath>Animal/Vargulf/Vargulf_front</texPath></li>
+								<li><texPath>Animal/Vargulf/Vargulf1_front</texPath></li>							
+								<li><texPath>Animal/Vargulf/Vargulf2_front</texPath></li>							
+								<li><texPath>Animal/Vargulf/Vargulf3_front</texPath></li>							
+							</allVariants>
+						</overlayFront>
+					</li>
+				</value>
+			</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
