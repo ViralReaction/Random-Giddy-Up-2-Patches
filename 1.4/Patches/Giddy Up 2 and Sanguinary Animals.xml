@@ -46,6 +46,13 @@
 						</value>
 					</li>
 
+					<li Class="PatchOperationAddModExtension">
+						<xpath>/Defs/ThingDef[ defName = "pphhyy_SanguineDeer"]</xpath>
+						<value>
+							<li Class="GiddyUp.NotMountable"/>
+						</value>
+					</li>
+					
 				</operations>
 			</match>
 		</match>
