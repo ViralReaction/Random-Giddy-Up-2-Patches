@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>GiddyUp 2 and Demigryph</name>
+	<name>Some Giddy Up 2 Patches</name>
 	<author>Viral Reaction</author>
 	<supportedVersions>
 		<li>1.4</li>
@@ -8,11 +8,6 @@
 	<packageId>VR.DemigryphUpdates</packageId>
 	<description>Patch to make Demigryph work with Giddy Up 2</description>
 	<modDependencies>
-		<li>
-			<packageId>pphhyy.DemigryphsMod</packageId>
-			<displayName>pphhyy's Demigryphsy</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2825762491</steamWorkshopUrl>
-		</li>
 	</modDependencies>
 
 </ModMetaData>
